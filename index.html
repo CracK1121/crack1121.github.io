@@ -5,23 +5,110 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style>
-        body{
-            align-items: center;
-        }
-    </style>
-    <title>аэропорт «Shafikov Airlines»  г.Челябинск</title>
-    <meta name="description" content=" «Shafikov Airlines ». Обеспечим быстрый и комфортный перелет.">
-    <meta name="keywords" content="" />
+    <title>ShafikovAirlines</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Аэропорт Shafikov Airlines </h1>
-    <h2>Об аэропорте</h2>
-    <div> Залы повышенной комфортности нашего аэропорта предоставляют своим пассажирам полный комплекс услуг, необходимых для удобного пребывания в аэропорту. Уютная обстановка, чуткий персонал и особая атмосфера залов повышенной комфортности подарят вам положительные эмоции перед полётом </div >
-    <img width="500 px" height="250px" src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/warzone/strategy-guide/pro-tips/04-tips/TIP-04C-IN-GAME-MODES-BR-002.jpg" alt="наш самолет">
-    <p>наш самолет</p>
-    <p><a name="top"></a></p>
-    <p><a href="#top">Наверх</a></p>
-    <a href="https://www.youtube.com/channel/UC2R_fXkZc8utJtg3A3IM45w">Наш ютуб</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a href="{{@route('main')}}" class="navbar-brand"><h1>ShafikovAirlines</h1></a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="{{@route('main')}}" class="nav-link mr-2">Home</a>
+            </li><li class="nav-item">
+            <a href="" class="nav-link mr-2">About us</a>
+        </li><li class="nav-item">
+            <a href="" class="nav-link mr-2">Contact</a>
+        </li><li class="nav-item">
+            <a href="{{ @route('rev') }}" class="nav-link mr-2">Reviews</a>
+        </li>
+
+        </ul>
+        <ul class="navbar-nav ">
+            <li id="signup" class="nav-item mr-2 d-flex align-items-center justify-content-around">
+                <svg width="1.7em" height="1.7em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                </svg>
+                <a href="{{@route('reg')}}" class="nav-link ">Sign up</a>
+            </li>
+            <li id="signin" class="nav-item  mr-2 d-flex align-items-center justify-content-around">
+                <a href="{{@route('auth')}}" class="nav-link">
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-box-arrow-in-right" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                        <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                    </svg>
+                    Sign in </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section id="hero">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1>ShafikovAirlines</h1>
+                <h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ea? </h2>
+            </div>
+        </div>
+
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-4 col-xl-2 col-6">
+            <div class="icon-box">
+                <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-window" fill="red" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                    <path fill-rule="evenodd" d="M15 6H1V5h14v1z"/>
+                    <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                </svg>
+                <h3><a href="">Lorem ipsum</a></h3>
+            </div>
+        </div><div class="col-md-4 col-xl-2 col-6">
+        <div class="icon-box">
+            <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-window" fill="red" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                <path fill-rule="evenodd" d="M15 6H1V5h14v1z"/>
+                <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+            </svg>
+            <h3><a href="">Lorem ipsum</a></h3>
+        </div>
+    </div><div class="col-md-4 col-xl-2 col-6">
+        <div class="icon-box">
+            <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-window" fill="red" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                <path fill-rule="evenodd" d="M15 6H1V5h14v1z"/>
+                <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+            </svg>
+            <h3><a href="">Lorem ipsum</a></h3>
+        </div>
+    </div><div class="col-md-4 col-xl-2 col-6">
+        <div class="icon-box">
+            <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-window" fill="red" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                <path fill-rule="evenodd" d="M15 6H1V5h14v1z"/>
+                <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+            </svg>
+            <h3><a href="">Lorem ipsum</a></h3>
+        </div>
+    </div><div class="col-md-4 col-xl-2 col-6">
+        <div class="icon-box">
+            <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-window" fill="red" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                <path fill-rule="evenodd" d="M15 6H1V5h14v1z"/>
+                <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+            </svg>
+            <h3><a href="">Lorem ipsum</a></h3>
+        </div>
+    </div>
+    </div>
+
+    </div>
+</section>
+<section>
+    <div class="container">
+
+    </div>
+</section>
 </body>
 </html>

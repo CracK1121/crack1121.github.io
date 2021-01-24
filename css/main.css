@@ -1,0 +1,77 @@
+#signin{
+    border-radius: 10%;
+    background: #13aff0;
+    height: 42px;
+}
+#signin:hover{
+    background: #06a4e6;
+}
+#signin a{
+    color:white !important;
+    font-weight: bold;
+    font-size: 17px;
+}
+#signup{
+    border-radius: 10%;
+}
+#signup a{
+    color:white !important;
+    font-weight: bold;
+    font-size: 17px;
+}
+#hero{
+    width: 100%;
+    height: 100vh;
+    background: url("https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/warzone/strategy-guide/pro-tips/04-tips/TIP-04C-IN-GAME-MODES-BR-002.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#hero:before{
+    content: "";
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#hero .container{
+    position: relative;
+    padding-top: 75px;
+}
+#hero h1{
+    color: white;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+}
+#hero h2{
+    color: white;
+    font-size: 24px;
+    margin-top: 18px;
+}
+#hero .icon-box h3 a{
+    color: darkgray;
+    text-decoration: none;
+}
+.icon-box{
+    padding: 30px 20px;
+    border: 1px solid gray;
+    text-align: center;
+}
+.icon-box:hover{
+    border-color:white;
+    color: white;
+}
+h2{
+    color: #343a40 !important;
+}
+.regSuccess a{
+    color:white !important;
+    font-weight: bold;
+    font-size: 17px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
